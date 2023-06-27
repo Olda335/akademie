@@ -1,15 +1,12 @@
 # akademie
-projekty datové akademie
+Projekt datové akademie
 
-Popis úvah vedoucích k vytvoření SQL skriptů projektu datové akademie
-První SQL dotaz vytvoří tabulku, které slouží jako zdroj dat pro zodpovězení 
-otázek ze zadání projektu:
-1) 
-2)
-3)
-4)
-5)
+Cílem projektu je připravit datové podklady, na základě kterých je možné zodpovědět několik otázek.
+První úkol je propojení tabulek s údaji o mzdách a cenách v ČR.
+Údaje je nutné spojit za odpovídající období, kterým je rok. Méně údajů je v tabulce o cenách, její rozsah určuje sledované období, což jsou roky 
+2008 - 2016.
+Zajímají nás pouze souhrnné údaje za celou ČR.
+Mzdy jsou v členění za jednotlivé obory, ceny za jednotlivé položky spotřebního koše.
 
-Nejprve jsem si udělal soupis všech dat, které budu do primární tabulky potřebovat, abych mohl na otázky zodpovědět.
-Soupis obsahoval seznam sloupců a zdrojové tabulky pro jednotlivé sloupce.
-Skript pro vytvoření primární tabulky je tento:
+
+
