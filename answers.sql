@@ -35,7 +35,7 @@ JOIN v_oldrich_vesely_project_sql_primary_final vodp2
 GROUP BY vodp.year_payroll, vodp.code_branch 
 ORDER BY growth_percent;
 
--- porovnání seznamu odvětví a odvětví, které nikdy neměly pokles
+-- porovnání seznamu odvětví a odvětví, které nikdy neměly pokles, odvětví NULL - stále rostly
 
 SELECT vgp2.branch, vgp.branch 
 FROM v_growth_payroll vgp2 
