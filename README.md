@@ -30,7 +30,23 @@ Která kategorie potravin zdražuje nejpomaleji?
 Pro zodpovězení této otázky jsem pro každou potravinu spočítal průměrnou procentní změnu ceny.
 Rozdíl ceny na začátku a konci sledovaného období dělenou počtem období.
 Nejpomaleji zdražuje cukr, u kterého ve sledovaném období dokonce došlo k poklesu ceny o 2,29 %.
+K tomuto tématu jsem ještě vytvořil jeden dotaz, který ukazuje meziroční změny všech potravin za jednotlivé roky.
 
 ## Otázka č.4
+Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
+Pro odpověď na otázku jsem agregoval ceny všech potravin v daném roce do jedné položky, vytvořil jsem jakýsi spotřební koš,
+u tohoto koše jsem pak vyhodnotil meziroční změny a ty pak porovnal s meziročními změnami mezd, které opět byly za všechny obory.
+Nejvýraznější rozdíl v pohybu mezd a cen je mezi roky 2008 a 2009, kdy ceny o 8,2 % klesly, zatímco mzdy o 3,11 % vyrostly.
+
+## Otázka č.5
+5.	Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce,
+projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
+
+Nejprve bylo nutné vytvořit dotaz, který spočítá meziroční změny GDP pro ČR a ty porovná s růstem mezd a cen.
+Jako zdroj dat pro GDP byla použita zdrojová tabulka economies.
+
+
+Posledním úkolem bylo vytvoření tabulky, která propojí tabulky countries a economies za sledované období pro 
+evropské země. K dotazu, který tuto tabulku vytvoří jsem ještě připojil dotaz, který zobrazuje evropské země, které jsou v tabulce countries a nejsou v tabulce economies.
 
 
