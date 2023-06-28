@@ -16,7 +16,8 @@ Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 Pro hledání odpovědi na tuto otázku jsem nejprve vytvořil pomocnou tabulku, která
 počítá meziroční procentní změny mezd pro jednotlivé obory.
 Druhý dotaz zobrazuje pouze obory, ve kterých někdy byl pokles mezd.
-A výsledkem třetího je seznam pěti oborů, které ve sledovaném období nikdy nevykázaly pokles průměrné mzdy
+A výsledkem třetího je seznam pěti oborů, které ve sledovaném období nikdy nevykázaly pokles průměrné mzdy.
+Odpověď tedy je, že je pouze pět oborů, ve kterých nedošlo meziročně v rámci sledovaného období k poklesu mezd.
 
 ## Otázka č.2
 Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd
@@ -24,6 +25,7 @@ Pro zodpovězení této otázky bylo nutné určit průměrnou roční mzdu za v
 cenou sledovaných komodit.
 V roce 2006 bylo možné koupit 1261 kg chleba a 1409 l mléka.
 V roce 2018 bylo možné koupit 1319 kg chleba a 1613 l mléka.
+U obou položek se množství, které lze koupit z průměrné mzdy zvětšuje. Mzdy tedy rostou rychleji než cena sledovaných položek.
 
 ## Otázka č.3
 Která kategorie potravin zdražuje nejpomaleji?
