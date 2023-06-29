@@ -10,6 +10,19 @@ Mzdy jsou v ročním členění za jednotlivé obory, ceny za jednotlivé polož
 K tabulce mzdy je připojena tabulka obsahující název oboru a k tabulce ceny je připojena ještě tabulka
 kategorie cen, které obsahuje údaje o tom v jakých jednotkách je cena uváděna a jaké je základní množství.
 Tabulka je vytvořena dotazem primar_table.sql a slouží jako podklad pro další dotazy.
+### Vstupní data:
+1.	czechia_payroll – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+2.	czechia_payroll_calculation – Číselník kalkulací v tabulce mezd.
+3.	czechia_payroll_industry_branch – Číselník odvětví v tabulce mezd.
+4.	czechia_payroll_unit – Číselník jednotek hodnot v tabulce mezd.
+5.	czechia_payroll_value_type – Číselník typů hodnot v tabulce mezd.
+6.	czechia_price – Informace o cenách vybraných potravin za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
+7.	czechia_price_category – Číselník kategorií potravin, které se vyskytují v našem přehledu
+
+Pro tvorbu sekundární tabulky pak:
+1.	countries - Všemožné informace o zemích na světě, například hlavní město, měna, národní jídlo nebo průměrná výška populace.
+2.	economies - HDP, GINI, daňová zátěž, atd. pro daný stát a rok.
+
 
 ## Otázka č.1
 Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
@@ -51,7 +64,7 @@ Jako zdroj dat pro GDP byla použita zdrojová tabulka economies.
 Mzdy kromě poklesu mezi roky 2012-2013 rostou každoročně bez ohledu na vývoj GDP.
 Naopak ceny klesají i při rostoucím GDP, viz období 2013-2016.
 
-
+### Tvorba sekundární tabulky
 Posledním úkolem bylo vytvoření tabulky, která propojí tabulky countries a economies za sledované období pro 
 evropské země. K dotazu, který tuto tabulku vytvoří jsem ještě připojil dotaz, který zobrazuje evropské země, které jsou v tabulce countries a nejsou v tabulce economies.
 
