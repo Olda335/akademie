@@ -74,9 +74,9 @@ GROUP BY vgp.actual_year
 
 -- úkol 5 porovnání růstu GDP a mezd a cen
 
-SELECT round(e.GDP,0) AS GDP, round(e2.GDP,0) AS GDP2, e.country , e.`year` , e2.`year` , 
+SELECT round(e.GDP,0) AS GDP, round(e2.GDP,0) AS GDP2,concat(e2.`year`,'-', e.`year`) AS period, 
 round(avg(vgp.growth_percent),2) AS salary_growth, 
-round(avg(vgp2.growth_percent),2) AS price_growth,
+round(avg(vgp2.growth_percent),2) AS price_growth, 
 round((e.GDP-e2.GDP)/e2.GDP *100,2) AS GDP_growth
 FROM economies e
 JOIN v_growth_payroll vgp 
@@ -87,6 +87,6 @@ JOIN economies e2
 	ON e.`year` = e2.`year` + 1
 	AND e.country = e2.country 
 WHERE e.country = 'Czech republic' AND e.`year` BETWEEN 2007 AND 2019
-GROUP BY vgp.actual_year 
+GROUP BY vgp.actual_year; 
 	
 	
