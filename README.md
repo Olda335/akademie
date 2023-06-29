@@ -18,6 +18,8 @@ počítá meziroční procentní změny mezd pro jednotlivé obory.
 Druhý dotaz zobrazuje pouze obory, ve kterých někdy byl pokles mezd.
 A výsledkem třetího je seznam pěti oborů, které ve sledovaném období nikdy nevykázaly pokles průměrné mzdy.
 Odpověď tedy je, že je pouze pět oborů, ve kterých nedošlo meziročně v rámci sledovaného období k poklesu mezd.
+Největší meziroční nárůst byl v oboru těžba a dobývání mezi roky 2007-2008 a to 13,87 %.
+Naopak největší pokles zaznamenal obor peněžnictví a pojišťovnictví mezi roky 2012-2013 a to 9 %.
 
 ## Otázka č.2
 Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd
@@ -46,6 +48,8 @@ projeví se to na cenách potravin či mzdách ve stejném nebo následujícím 
 
 Nejprve bylo nutné vytvořit dotaz, který spočítá meziroční změny GDP pro ČR a ty porovná s růstem mezd a cen.
 Jako zdroj dat pro GDP byla použita zdrojová tabulka economies.
+Mzdy kromě poklesu mezi roky 2012-2013 rostou každoročně bez ohledu na vývoj GDP.
+Naopak ceny klesají i při rostoucím GDP, viz období 2013-2016.
 
 
 Posledním úkolem bylo vytvoření tabulky, která propojí tabulky countries a economies za sledované období pro 
