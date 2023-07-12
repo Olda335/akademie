@@ -64,6 +64,17 @@ ORDER BY diff ;
 
 -- otázka č.4 porovnání růstu cen potravin a růstu mezd
 
+-- pomocná tabulka se zobrazením meziročních změn cen
+CREATE VIEW v_growth_prices AS
+SELECT vodp.year_price AS actual_year, vodp.item, vodp2.year_price AS prev, vodp.price, vodp2.price AS price_prev,
+round((vodp.price - vodp2.price)/vodp.price * 100,2) AS growth_percent
+FROM v_oldrich_vesely_project_sql_primary_final  vodp
+JOIN v_oldrich_vesely_project_sql_primary_final  vodp2
+	ON vodp.year_price = vodp2.year_price + 1 
+	AND vodp.item = vodp2.item
+GROUP BY vodp.year_price, vodp.item;
+
+
 SELECT vgp.actual_year AS comparsion_year, round(avg(vgp2.growth_percent),2) AS price_growth, round(avg(vgp.growth_percent),2) AS salary_growth, 
 round(avg(vgp2.growth_percent)-avg(vgp.growth_percent),4) AS difference
 FROM v_growth_payroll vgp 
@@ -74,7 +85,7 @@ GROUP BY vgp.actual_year
 
 -- úkol 5 porovnání růstu GDP a mezd a cen
 
-SELECT round(e.GDP,0) AS GDP, round(e2.GDP,0) AS GDP2,concat(e2.`year`,'-', e.`year`) AS period, 
+SELECT round(e.GDP,0) AS GDP, round(e2.GDP,0) AS GDP2,concat('    ', e2.`year`,'-', e.`year`) AS period, 
 round(avg(vgp.growth_percent),2) AS salary_growth, 
 round(avg(vgp2.growth_percent),2) AS price_growth, 
 round((e.GDP-e2.GDP)/e2.GDP *100,2) AS GDP_growth
