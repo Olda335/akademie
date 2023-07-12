@@ -61,9 +61,6 @@ JOIN
 ON last_year.item = first_year.item
 ORDER BY diff ;
 
-
--- otázka č.4 porovnání růstu cen potravin a růstu mezd
-
 -- pomocná tabulka se zobrazením meziročních změn cen
 CREATE VIEW v_growth_prices AS
 SELECT vodp.year_price AS actual_year, vodp.item, vodp2.year_price AS prev, vodp.price, vodp2.price AS price_prev,
@@ -73,6 +70,9 @@ JOIN v_oldrich_vesely_project_sql_primary_final  vodp2
 	ON vodp.year_price = vodp2.year_price + 1 
 	AND vodp.item = vodp2.item
 GROUP BY vodp.year_price, vodp.item;
+
+
+-- otázka č.4 porovnání růstu cen potravin a růstu mezd
 
 
 SELECT vgp.actual_year AS comparsion_year, round(avg(vgp2.growth_percent),2) AS price_growth, round(avg(vgp.growth_percent),2) AS salary_growth, 
