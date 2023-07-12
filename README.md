@@ -47,7 +47,7 @@ Která kategorie potravin zdražuje nejpomaleji?
 Pro zodpovězení této otázky jsem pro každou potravinu spočítal průměrnou procentní změnu ceny.
 Rozdíl ceny na začátku a konci sledovaného období dělenou počtem období.
 Nejpomaleji zdražuje cukr, u kterého ve sledovaném období dokonce došlo k poklesu ceny o 2,29 %.
-K tomuto tématu jsem ještě vytvořil jeden dotaz, který ukazuje meziroční změny všech potravin za jednotlivé roky.
+K tomuto tématu jsem ještě vytvořil jeden dotaz, který ukazuje meziroční změny cen všech potravin za jednotlivé roky.
 
 ## Otázka č.4
 Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
